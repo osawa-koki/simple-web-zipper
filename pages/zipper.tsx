@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import dayjs from 'dayjs'
 import { Alert, Form, Table } from 'react-bootstrap'
 
 export default function Zipper (): React.JSX.Element {
@@ -41,7 +42,7 @@ export default function Zipper (): React.JSX.Element {
                     <td>{file.name}</td>
                     <td>{file.size.toLocaleString()}</td>
                     <td>{file.type}</td>
-                    <td>{file.lastModified}</td>
+                    <td>{dayjs(file.lastModified).format('YYYY-MM-DD')}</td>
                   </tr>
                 ))
               }
