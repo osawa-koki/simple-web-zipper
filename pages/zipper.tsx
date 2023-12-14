@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Table } from 'react-bootstrap'
-import { Alert, Form } from 'react-bootstrap'
+import { Alert, Form, Table } from 'react-bootstrap'
 
 export default function Zipper (): React.JSX.Element {
   const [files, setFiles] = useState<FileList | null>(null)
