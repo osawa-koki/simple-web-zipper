@@ -39,7 +39,7 @@ export default function Zipper (): React.JSX.Element {
                 Array.from(files).map((file, index) => (
                   <tr key={index}>
                     <td>{file.name}</td>
-                    <td>{file.size}</td>
+                    <td>{file.size.toLocaleString()}</td>
                     <td>{file.type}</td>
                     <td>{file.lastModified}</td>
                   </tr>
