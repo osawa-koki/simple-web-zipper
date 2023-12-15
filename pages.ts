@@ -12,7 +12,7 @@ const pages: Page[] = [
   },
   {
     emoji: '📝',
-    path: '/zipper',
+    path: '/zipper/',
     name: 'Zipper'
   }
 ]
