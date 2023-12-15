@@ -8,4 +8,3 @@ RUN yarn build
 FROM nginx:1.25 as server
 EXPOSE 80
 COPY --from=builder /work/dist/ /usr/share/nginx/html/
-CMD ["nginx"]
